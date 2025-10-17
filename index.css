@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: nova;
-    src: url("../font/ProximaNova-Regular.ttf");
+    src: url("./font/ProximaNova-Regular.ttf");
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 
 .header {
     height: 100vh;
-    background-image: url("../Images/bg2.png"), url("../Images/bg.png");
+    background-image: url("./Images/bg2.png"), url("./Images/bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +51,11 @@ body {
 
 .nav-bar .nav a {
     text-decoration: none;
+
+}
+
+.nav-bar .nav a:hover {
+    text-decoration: underline;
 
 }
 
@@ -106,7 +111,8 @@ body {
 
 
 .btn-head .btn {
-    border: 1.5px solid white;
+    border: 1.5px solid rgba(166, 166, 166, 0.548);
+    color: #c0c0c080;
     border-radius: 50px;
     justify-content: center;
     padding: 10px 20px 10px 10px;
@@ -115,15 +121,30 @@ body {
     width: 182px;
     height: 60px;
 }
+.btn-head  .btn:hover{
+    border: 1.5px solid rgb(255, 255, 255);
+    color: #FFFF;
+       
+}
+
 
 #btn-event {
     border-radius: 30px solid;
-    border: 1.5px solid #F5167E;
+    border: 1.5px solid #f5167e95;
     text-decoration: none;
-    background-color: #F5167E;
+    background-color: #f5167e83;
+    color: #8b1e5178;
     width: 182px;
     height: 60px;
 }
+#btn-event:hover {
+    border: 1.5px solid #f5167e95;
+    background-color: #f5167e;
+    color: #ee1379;
+
+   
+}
+
 
 .btn-head {
     margin-top: 20px;
@@ -327,7 +348,7 @@ body {
 }
 
 .event p{
-    font-size: small;
+    font-size:x-small;
 }
 
 
@@ -419,7 +440,7 @@ body {
 
 .event-page {
     height: 100vh;
-    background-image: url("../Images/Back.png"), url(../Images/event.jpg);
+    background-image: url("./Images/Back.png"), url("./Images/event.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -443,7 +464,7 @@ body {
 
 .header-blog {
     height: 100vh;
-    background-image: url("../Images/Back.png"), url("../Images/Blog.jpg");
+    background-image: url("./Images/Back.png"), url("./Images/Blog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -469,7 +490,7 @@ body {
 /*------------Login----------------*/
 .header-login {
     height: 100vh;
-    background-image: url("../Images/Login.png");
+    background-image: url("./Images/Login.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -496,7 +517,7 @@ body {
 /*------------sign_up------------*/
 .header-sign-up{
     height: 100vh;
-    background-image: url("../Images/back-sign.png"), url("../Images/pass-sign.png");
+    background-image: url("./Images/back-sign.png"), url("./Images/pass-sign.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -550,17 +571,15 @@ body {
     display: block;
     justify-content: center;
   }
-  .blog-container{
-    display: block;
-    justify-content: center;
-  }
+  
   .blog-container .blog-item img{
     width: 30%;
     font-size: 4px;
   }
-  .blog-container .blog-item{
-    display: block;
-    justify-content: center;
-  }
+  
 
+}
+
+button{
+    cursor: pointer;
 }
